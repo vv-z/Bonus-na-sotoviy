@@ -1,14 +1,14 @@
 public class Main {
     public static void main(String[] args) {
 
-        int b = 200; // баланс телефона
-        int x = 100; // полная сумма за которую дается 1 балл
-        int s = 1100; // сумма пополнения для начисления бонуса
-        if (s > 1000) {
-            System.out.println("Вы пополнили баланс на " + s + " руб., Вам начислено " + s / x + " бонусов. Ваш баланс с учетом бонусов составляет " + (s + s / x + b) + " руб.");
+        int balance = 200; // баланс телефона
+        int bonus_amount = 100; // полная сумма за которую дается 1 балл
+        int refill = 1100; // сумма пополнения баланса
+        if (refill > 1000) {
+            System.out.println("Вы пополнили баланс на " + refill + " руб., Вам начислено " + refill / bonus_amount + " бонусов. Ваш баланс с учетом бонусов составляет " + (refill + refill / bonus_amount + balance) + " руб.");
         } else {
 
-            System.out.println("Ваш баланс = " + (s + b) + " руб.");
+            System.out.println("Ваш баланс = " + (refill + balance) + " руб.");
         }
     }
 }
